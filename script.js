@@ -1,7 +1,7 @@
 // script.js
 
 window.addEventListener('load', (event) => {
-    setTimeout(showPopup, 3000); // 3초 후에 팝업 표시
+    setTimeout(showPopup, 3000); 
 });
 
 function showPopup() {
@@ -84,16 +84,16 @@ function confirmCustom(title, message) {
 }
 
 function downloadFile(fileName, fileUrl) {
-    // 파일 다운로드를 위한 a 태그 생성
+    
     var element = document.createElement('a');
-    element.style.display = 'none';  // a 태그를 보이지 않게 설정
+    element.style.display = 'none';  
     element.href = fileUrl;
     element.download = fileName;
     
-    // 클릭 이벤트를 트리거하여 파일 다운로드
+    
     document.body.appendChild(element);
     element.click();
     
-    // 다운로드 후 a 태그를 제거
+    
     document.body.removeChild(element);
 }
